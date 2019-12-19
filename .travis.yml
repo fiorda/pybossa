@@ -42,7 +42,7 @@ matrix:
         - alembic -c alembictest.ini stamp head
         - alembic -c alembictest.ini upgrade head
         - pip install coverage
-        - PYBOSSA_SETTINGS="./settings_test.py" PYBOSSA_REDIS_CACHE_DISABLED=1 coverage run -m nose test/test_opt.py
+        - PYBOSSA_SETTINGS="./settings_test.py" PYBOSSA_REDIS_CACHE_DISABLED=1 coverage run -m nose test/test_otp.py
         - cat .coverage
     # notifications:
     #  slack:
