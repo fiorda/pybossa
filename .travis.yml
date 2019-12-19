@@ -48,4 +48,5 @@ matrix:
     #  email: false
     after_success:
     - pip install coveralls
+    - coveralls debug
     - coveralls
